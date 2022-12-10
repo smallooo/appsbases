@@ -11,13 +11,17 @@ const go = () => {
     router.push(`/hi/${encodeURIComponent(name)}`)
 }
 
+const iRadio = () => {
+  router.push('/iRadio')
+}
+
 const { t } = useI18n()
 </script>
 
 <template>
   <div>
     <div text-4xl>
-      <div i-carbon-campsite inline-block />
+      <div i-carbon-campsite inline-block/>
     </div>
     <p>
       <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
@@ -28,7 +32,7 @@ const { t } = useI18n()
       <em text-sm opacity-75>{{ t('intro.desc') }}</em>
     </p>
 
-    <div py-4 />
+    <div py-4/>
 
     <TheInput
       v-model="name"
@@ -47,10 +51,22 @@ const { t } = useI18n()
         {{ t('button.go') }}
       </button>
     </div>
+    <img class="m-auto"
+         src="../assets/images/collection01/naruto_02.png" alt="" width="300" height="300">
+
+    <div>
+      <button
+        btn m-3 text-sm
+        :disabled="false"
+        @click="iRadio"
+      >
+        {{ t('button.iRadio') }}
+      </button>
+    </div>
   </div>
 </template>
 
 <route lang="yaml">
 meta:
-  layout: home
+layout: home
 </route>
