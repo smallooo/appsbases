@@ -3,6 +3,8 @@ button:
   back: Back
   go: GO
   iRadio: iRadio
+  Download: Download
+  ComingSoon: ComingSoon
   home: Home
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
