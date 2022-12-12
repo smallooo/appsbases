@@ -16,9 +16,9 @@ watchEffect(() => {
 <template>
   <br><br><br>
   <div>
-    <img style="display:inline-block; padding: 18px;" class="m-auto"
+    <img style=" padding: 18px;" class="m-auto"
          src="../assets/images/iRadio/screen1.webp" alt="" width="300" height="300">
-    <img style="display:inline-block; padding: 18px;" class="m-auto"
+    <img style=" padding: 18px;" class="m-auto"
          src="../assets/images/iRadio/screen2.webp" alt="" width="300" height="300">
     <div>
       <div>
@@ -27,7 +27,7 @@ watchEffect(() => {
         <h1>It's free with no ads</h1>
       </div>
       <br><br><br>
-      <div style="display:inline-block;">
+      <span>
         <h1>Android</h1>
         <form method="get"
               action='https://ps-1314295485.cos.ap-shanghai.myqcloud.com/beast_Official_5.6.9_build00177.apk'>
@@ -37,8 +37,8 @@ watchEffect(() => {
             {{ t('button.Download') }}
           </button>
         </form>
-      </div>
-      <div style="display:inline-block;">
+      </span>
+      <span>
         <h1>iOS</h1>
         <form method="get"
         >
@@ -48,7 +48,7 @@ watchEffect(() => {
             {{ t('button.ComingSoon') }}
           </button>
         </form>
-      </div>
+      </span>
     </div>
   </div>
 </template>
